@@ -1,0 +1,8 @@
+<div class="scroll-banner">
+  <ul (ngModel)="imageList">
+    <li *ngFor = "let image of imageList" (click)="selectImage(image)" [class.select]="image==curSelect">
+      <img src="assets/{{image}}" />
+    </li>
+  </ul>
+</div>
+{{curImage}}
