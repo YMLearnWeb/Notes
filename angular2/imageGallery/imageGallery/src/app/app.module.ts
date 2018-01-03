@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { ScrollBannerComponent } from './scroll-banner/scroll-banner.component';
 import { ViewBoxComponent } from './view-box/view-box.component';
 import { GalleryService } from './gallery.service';
+import { ScrollBannerParentComponent } from './scroll-banner-parent/scroll-banner-parent.component';
+import { ViewBannerChildrenComponent } from './view-banner-children/view-banner-children.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScrollBannerComponent,
-    ViewBoxComponent
+    ViewBoxComponent,
+    ScrollBannerParentComponent,
+    ViewBannerChildrenComponent
   ],
   imports: [
     BrowserModule

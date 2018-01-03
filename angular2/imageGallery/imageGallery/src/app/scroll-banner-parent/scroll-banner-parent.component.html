@@ -1,3 +1,6 @@
+<p>
+  scroll-banner-parent works!
+</p>
 <div class="scroll-banner">
   <ul (ngModel)="imageList">
     <li *ngFor = "let image of imageList" (click)="selectImage(image)" [class.select]="image==curSelect">
@@ -5,3 +8,4 @@
     </li>
   </ul>
 </div>
+<app-view-banner-children [curImage]="curImages"></app-view-banner-children>
