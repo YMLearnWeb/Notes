@@ -6,7 +6,7 @@ CSS note:
 	• Pointer-events:none
 
 Flex ISSUES
-	• No width to the image, the image sharpness will be low. Set max-width could be helpful
+- No width to the image, the image sharpness will be low. Set max-width could be helpful
 
 
 
