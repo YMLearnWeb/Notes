@@ -4,17 +4,16 @@
 > httpd -v 
 
 ## Start Apache and Test it on the localhost
+
 In the Terminal 
----
+'''
 > sudo apachectl start 
----
 Then in the browser, try http://localhost. If you see it works, it eams nthe Apache starts.
 
 The stop and restart command
----
+'''
 > sudo apachectl stop
 > sudo apachectl restart
----
 
 ## Start your site
 1. Create Sites directory 
