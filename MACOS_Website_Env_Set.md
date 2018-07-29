@@ -7,7 +7,8 @@
 
 In the Terminal 
 '''
-> sudo apachectl start 
+> sudo apachectl start
+'''
 Then in the browser, try http://localhost. If you see it works, it eams nthe Apache starts.
 
 The stop and restart command
