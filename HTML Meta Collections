@@ -1,0 +1,327 @@
+HTML 里 meta常用标签：
+
+renderer:
+
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+     content的取值为webkit,ie-comp,ie-stand之一，区分大小写。
+
+     分别代表用webkit内核，IE兼容内核，IE标准内核。
+
+     若页面需默认用极速核，增加标签：<meta name="renderer" content="webkit"> 
+
+     若页面需默认用ie兼容内核，增加标签：<meta name="renderer" content="ie-comp"> 
+
+     若页面需默认用ie标准内核，增加标签：<meta name="renderer" content="ie-stand"> 
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=7" >   
+
+#以上代码告诉IE浏览器，无论是否用DTD声明文档标准，IE8/9都会以IE7引擎来渲染页面。  
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=8" >   
+
+#以上代码告诉IE浏览器，IE8/9都会以IE8引擎来渲染页面。  
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge" >   
+
+#以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。  
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=7,IE=9" >   
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=7,9" >   
+
+<meta http-equiv = "X-UA-Compatible" content = "IE=Edge,chrome=1" >
+
+# 以上代码IE = edge告诉IE使用最新的引擎渲染网页，chrome = 1则可以激活Chrome Frame .
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+   width - viewport的宽度 height - viewport的高度
+
+    initial-scale - 初始的缩放比例
+
+    minimum-scale - 允许用户缩放到的最小比例
+
+    maximum-scale - 允许用户缩放到的最大比例
+
+    user-scalable - 用户是否可以手动缩放
+
+各浏览器平台
+
+Microsoft Internet Explorer
+
+<!-- 优先使用最新的ie版本 -->
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- 是否开启cleartype显示效果 -->
+
+<meta http-equiv="cleartype" content="on">
+
+<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+
+<!-- Pinned Site -->
+
+<!-- IE 10 / Windows 8 -->
+
+<meta name="msapplication-TileImage" content="pinned-tile-144.png">
+
+<meta name="msapplication-TileColor" content="#009900">
+
+<!-- IE 11 / Windows 9.1 -->
+
+<meta name="msapplication-config" content="ieconfig.xml">
+
+    Google Chrome
+
+<!-- 优先使用最新的chrome版本 -->
+
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+<!-- 禁止自动翻译 -->
+
+<meta name="google" value="notranslate">
+
+    360浏览器
+
+<!-- 选择使用的浏览器解析内核 -->
+
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+    UC手机浏览器
+
+<!-- 将屏幕锁定在特定的方向 -->
+
+<meta name="screen-orientation" content="landscape/portrait">
+
+<!-- 全屏显示页面 -->
+
+<meta name="full-screen" content="yes">
+
+<!-- 强制图片显示，即使是"text mode" -->
+
+<meta name="imagemode" content="force">
+
+<!-- 应用模式，默认将全屏，禁止长按菜单，禁止手势，标准排版，强制图片显示。 -->
+
+<meta name="browsermode" content="application">
+
+<!-- 禁止夜间模式显示 -->
+
+<meta name="nightmode" content="disable">
+
+<!-- 使用适屏模式显示 -->
+
+<meta name="layoutmode" content="fitscreen">
+
+<!-- 当页面有太多文字时禁止缩放 -->
+
+<meta name="wap-font-scale" content="no">
+
+    QQ手机浏览器
+
+<!-- 锁定屏幕在特定方向 -->
+
+<meta name="x5-orientation" content="landscape/portrait">
+
+<!-- 全屏显示 -->
+
+<meta name="x5-fullscreen" content="true">
+
+<!-- 页面将以应用模式显示 -->
+
+<meta name="x5-page-mode" content="app">
+
+    Apple iOS
+
+<!-- Smart App Banner -->
+
+<meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
+
+<!-- 禁止自动探测并格式化手机号码 -->
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Add to Home Screen添加到主屏 -->
+
+<!-- 是否启用 WebApp 全屏模式 -->
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- 设置状态栏的背景颜色,只有在 “apple-mobile-web-app-capable” content=”yes” 时生效 -->
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- 添加到主屏后的标题 -->
+
+<meta name="apple-mobile-web-app-title" content="App Title">
+
+    Google Android
+
+<meta name="theme-color" content="#E64545">
+
+<!-- 添加到主屏 -->
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+    App Links
+
+<!-- iOS -->
+
+<meta property="al:ios:url" content="applinks://docs">
+
+<meta property="al:ios:app_store_id" content="12345">
+
+<meta property="al:ios:app_name" content="App Links">
+
+<!-- Android -->
+
+<meta property="al:android:url" content="applinks://docs">
+
+<meta property="al:android:app_name" content="App Links">
+
+<meta property="al:android:package" content="org.applinks">
+
+<!-- Web Fallback -->
+
+<meta property="al:web:url" content="https://applinks.org/documentation">
+
+<!-- More info: https://applinks.org/documentation/ -->
+
+最后——移动端常用的meta
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<meta name="format-detection"content="telephone=no, email=no" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+
+<meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+
+<!-- 启用360浏览器的极速模式(webkit) -->
+
+<meta name="renderer" content="webkit">
+
+<!-- 避免IE使用兼容模式 -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+
+<meta name="HandheldFriendly" content="true">
+
+<!-- 微软的老式浏览器 -->
+
+<meta name="MobileOptimized" content="320">
+
+<!-- uc强制竖屏 -->
+
+<meta name="screen-orientation" content="portrait">
+
+<!-- QQ强制竖屏 -->
+
+<meta name="x5-orientation" content="portrait">
+
+<!-- UC强制全屏 -->
+
+<meta name="full-screen" content="yes">
+
+<!-- QQ强制全屏 -->
+
+<meta name="x5-fullscreen" content="true">
+
+<!-- UC应用模式 -->
+
+<meta name="browsermode" content="application">
+
+<!-- QQ应用模式 -->
+
+<meta name="x5-page-mode" content="app">
+
+<!-- windows phone 点击无高光 -->
+
+<meta name="msapplication-tap-highlight" content="no">
+
+<!-- 适应移动端end -->
+
+keywords,description(经常用到的两个)
+
+页面的关键字和描述，是写给搜索引擎看的，关键字可以有多个用 ‘,’号隔开
+
+<meta name="keywords" content="HTML,CSS,JAVASCRIPT,PHP">
+
+<meta name="description" content="html meta标签大全,整理一下加强记忆">
+
+Content-Type
+
+告诉浏览器当前访问的资源类型
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><!--告诉浏览器当前访问的资源类型 并声明编码-->
+
+refresh
+
+重定向（以下示例5秒后会跳转到：https://blog.csdn.net）
+
+<meta http-equiv="refresh" content="5;url="https://blog.csdn.net" />
+
+full-screen
+
+全屏显示网页(部分移动端浏览器的专有属性)
+
+<meta name="full-screen" content="yes"/>
+
+browsermode
+
+浏览器模式-强制坚屏显示(部分移动端浏览器的专有属性),
+
+<meta name="browsermode" content="application"/>
+
+format-detection
+
+数据格式验证渲染： 
+
+telephone：而iPhone会自动把你这个文字加链接样式、并且点击这个数字还会自动拨号！默认开启 
+
+email：浏览器会识别邮箱并加样式，点击可以调用系统默认邮件应用给该地址发邮件，默认开启 
+
+adress：adress=yes就开启了点击地址直接跳转至地图的功能，默认开启
+
+<meta content="telephone=no" name="format-detection" />
+
+<meta content="telephone=no,email=no,adress=no" name="format-detection" />
+
+x5-orientation
+
+QQ浏览器强制竖屏
+
+<meta name="x5-orientation" content="portrait"/>
+
+x5-fullscreen
+
+QQ浏览器强制全屏
+
+<meta name="x5-fullscreen" content="true"/>
+
+x5-page-mode
+
+QQ浏览器应用模式
+
+<meta name="x5-page-mode" content="app"/>
+
+X-UA-Compatible
+
+IE的兼容模式:以IE的哪个版本去渲染页面（IE=8：以IE8的模式去渲染页面，IE=Edge:以最新版本的IE去渲染页面，当然这个最新指的是你系统装的最高版本的IE）
+
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
